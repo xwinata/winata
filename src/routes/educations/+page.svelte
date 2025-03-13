@@ -1,3 +1,1 @@
-<div>
-  educations
-</div>
+<div>educations</div>
