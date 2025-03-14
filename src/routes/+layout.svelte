@@ -11,14 +11,20 @@
 		BadgeCheckSolid,
 		KeyboardOutline,
 		KeyboardSolid,
-		GithubSolid
+		GithubSolid,
+
+		MessagesOutline,
+
+		MessagesSolid
+
+
 	} from 'flowbite-svelte-icons';
 	import { DarkMode } from 'flowbite-svelte';
 
 	let site = {
 		name: 'Christian Winata',
 		href: '/',
-		img: '/images/flowbite-svelte-icon-logo.svg'
+		img: '/images/xwinata.png'
 	};
 
 	import { setContext } from 'svelte';
@@ -55,6 +61,12 @@
 			activeIcon: KeyboardSolid
 		},
 		{
+			label: 'Contact Me',
+			href: '/contact-me',
+			icon: MessagesOutline,
+			activeIcon: MessagesSolid
+		},
+		{
 			label: 'About this site',
 			href: 'https://github.com/xwinata/winata',
 			icon: GithubSolid,
@@ -66,7 +78,7 @@
 <DarkMode class="fixed right-4 bottom-4 z-99" />
 <div class="relative min-h-screen dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />
-	<div class="px-2 pt-16 lg:pt-24 pb-4">
+	<div class="px-2 pt-16 pb-4 lg:pt-24">
 		{@render children()}
 	</div>
 </div>

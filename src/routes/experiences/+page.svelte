@@ -11,14 +11,12 @@
 		'h-6',
 		'bg-gray-200',
 		'rounded-full',
-		'ring-8',
+		'ring-2',
 		'ring-gray-200',
-		'dark:ring-gray-900',
-		'dark:bg-gray-100'
 	].join(' ');
 </script>
 
-<Card class="lg:min-w-6xl justify-self-center">
+<Card class="justify-self-center lg:min-w-6xl">
 	<Timeline order="vertical">
 		<TimelineItem date="July 2020 - September 2024" title="Senior Software Engineer | Xendit">
 			<svelte:fragment slot="icon">
@@ -77,9 +75,9 @@
 				<img alt="maven-lab" src="/images/maven-lab.svg" class={companyLogoClass} />
 			</svelte:fragment>
 			<p>
-				I worked on the NTUC Plus website in Singapore, leveraging Drupal to develop new features,
-				resolve bugs, and ensure site stability. My role involved maintaining the platform,
-				optimizing performance, and contributing to a seamless user experience.
+				I worked on the NTUC Plus website in Singapore, leveraging their Drupal website to develop
+				new features, resolve bugs, and ensure site stability. My role involved maintaining the
+				platform, optimizing performance, and contributing to a seamless user experience.
 			</p>
 		</TimelineItem>
 	</Timeline>

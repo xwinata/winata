@@ -7,17 +7,17 @@
 		img="/images/chris.svg"
 		horizontal
 		reverse
-		class="lg:m-8 lg:min-w-2xl bg-gray-100 p-4 drop-shadow-md hover:scale-102 lg:justify-self-end lg:mr-32"
+		class="bg-gray-100 p-4 drop-shadow-md hover:scale-102 lg:m-8 lg:mr-32 lg:min-w-2xl lg:justify-self-end"
 		imgClass="lg:hidden"
 	>
-		<p class="mb-2 text-4xl text-center">Hi! i'm Christian Winata</p>
+		<p class="mb-2 text-center text-4xl">Hi! i'm Christian Winata</p>
 		<p class="text-center text-lg">
 			a software engineer specializing in building scalable and high-performance applications that
 			drive real impact. I believe in leveraging technology to solve complex problems and create
 			meaningful solutions that benefit businesses and society.
 		</p>
 	</Card>
-	<Card class="lg:m-8 lg:min-w-2xl bg-gray-100 p-4 drop-shadow-md hover:scale-102 lg:ml-32">
+	<Card class="bg-gray-100 p-4 drop-shadow-md hover:scale-102 lg:m-8 lg:ml-32 lg:min-w-2xl">
 		<p class="text-center text-lg">
 			I thrive in Agile Scrum environments, where collaboration, adaptability, and iterative
 			development drive success. As a full-stack developer with a strong backend focus, my expertise
@@ -27,5 +27,17 @@
 			deliver impactful and reliable solutions.
 		</p>
 	</Card>
-	<img src="/images/chris.svg" alt="" class="ring-12 ring-gray-200 scale-75 rounded-full lg:row-span-2 hidden lg:block" />
+	<img
+		src="/images/chris.svg"
+		alt=""
+		class="hidden scale-75 rounded-full ring-12 ring-gray-200 lg:row-span-2 lg:block"
+	/>
 </div>
+<Card
+	class="place-self-center bg-gray-100 p-4 text-center text-lg drop-shadow-md hover:scale-102 lg:m-8 lg:min-w-4xl"
+>
+	When I'm not writing code, you'll probably find me spending time with my wife, or
+	diving into a game. Music and gaming fuel my creativity, giving me a fresh perspective when I get
+	back to building software. Whether it's keeping rhythm, discovering new sounds, or exploring
+	virtual worlds, I enjoy the balance between technology and creativity.
+</Card>
