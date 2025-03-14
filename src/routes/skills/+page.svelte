@@ -15,6 +15,11 @@
 			ref: 'https://gorm.io/'
 		},
 		{
+			alt: 'echo',
+			src: 'https://echo.labstack.com/img/logo-light.svg',
+			ref: 'https://echo.labstack.com/'
+		},
+		{
 			alt: 'javascript',
 			src: '/images/js.svg',
 			ref: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
@@ -30,9 +35,29 @@
 			ref: 'https://www.typescriptlang.org/'
 		},
 		{
+			alt: 'expressjs',
+			src: '/images/expressjs.svg',
+			ref: 'https://expressjs.com/'
+		},
+		{
+			alt: 'nestjs',
+			src: 'https://nestjs.com/logo-small-gradient.d792062c.svg',
+			ref: 'https://nestjs.com/'
+		},
+		{
 			alt: 'sequelize',
 			src: 'https://sequelize.org/img/logo.svg',
 			ref: 'https://sequelize.org/'
+		},
+		{
+			alt: 'drizzleORM',
+			src: 'https://raw.githubusercontent.com/drizzle-team/drizzle-orm/main/misc/readme/logo-github-sq-dark.svg',
+			ref: 'https://orm.drizzle.team/'
+		},
+		{
+			alt: 'typeORM',
+			src: '/images/typeorm.svg',
+			ref: 'https://typeorm.io/'
 		},
 		{
 			alt: 'jest',
@@ -48,6 +73,11 @@
 			alt: 'robot',
 			src: '/images/robot.svg',
 			ref: 'https://robotframework.org/'
+		},
+		{
+			alt: 'flask',
+			src: '/images/flask.svg',
+			ref: 'https://flask.palletsprojects.com/'
 		},
 		{
 			alt: 'php',
@@ -93,6 +123,11 @@
 			alt: 'svelte',
 			src: 'https://raw.githubusercontent.com/sveltejs/branding/refs/heads/master/svelte-logo.svg',
 			ref: 'https://svelte.dev/'
+		},
+		{
+			alt: 'nextjs',
+			src: '/images/nextjs.svg',
+			ref: 'https://nextjs.org/'
 		},
 		{
 			alt: 'tailwind-css',
