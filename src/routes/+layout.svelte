@@ -71,6 +71,10 @@
 	];
 </script>
 
+
+<svelte:head>
+	<title>Christian Winata</title>
+</svelte:head>
 <DarkMode class="fixed right-4 bottom-4 z-99" />
 <div class="relative min-h-screen dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />

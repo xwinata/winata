@@ -120,6 +120,16 @@
 			ref: 'https://redis.io/'
 		},
 		{
+			alt: 'kafka',
+			src: '/images/kafka.svg',
+			ref: 'https://kafka.apache.org/'
+		},
+		{
+			alt: 'rabbitmq',
+			src: 'https://www.rabbitmq.com/img/rabbitmq-logo-with-name.svg',
+			ref: 'https://www.rabbitmq.com/'
+		},
+		{
 			alt: 'github',
 			src: '/images/github.svg',
 			ref: 'https://github.com/'
