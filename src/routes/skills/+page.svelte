@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Card, Tooltip } from 'flowbite-svelte';
 
-  import { Id, Gb, Jp } from 'svelte-flags'
+	import { Id, Gb, Jp } from 'svelte-flags';
 
 	const items = [
 		{
@@ -99,11 +99,11 @@
 			src: 'https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg',
 			ref: 'https://tailwindcss.com/'
 		},
-    {
-      alt: 'storybook',
-      src: 'https://raw.githubusercontent.com/storybookjs/brand/main/icon/icon-storybook-default.svg',
-      ref: 'https://storybook.js.org/'
-    },
+		{
+			alt: 'storybook',
+			src: 'https://raw.githubusercontent.com/storybookjs/brand/main/icon/icon-storybook-default.svg',
+			ref: 'https://storybook.js.org/'
+		},
 		{
 			alt: 'mongodb',
 			src: '/images/mongodb.svg',
@@ -162,32 +162,32 @@
 	];
 </script>
 
-<div class="lg:flex place-self-center">
-<Card class="bg-gray-300 lg:min-w-2xl dark:bg-gray-600 m-2">
-	<p class="mb-8 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
-	<div class="grid-auto-flow grid grid-cols-3 gap-8 lg:grid-cols-5">
-		{#each items as { ref, src, alt }}
-			<div>
-				<a href={ref} target="_blank">
-					<img {src} {alt} class="size-20" />
-				</a>
-				<Tooltip>
-					{alt}
-				</Tooltip>
-			</div>
-		{/each}
-	</div>
-</Card>
-<Card class="m-2 h-fit">
-	<p class="mb-8 text-xl font-black dark:text-white">Spoken Languages</p>
-  <div class="flex">
-    <Id class="mr-4"/> Indonesia - Native
-  </div>
-  <div class="flex">
-    <Gb class="mr-4"/> English - Professional
-  </div>
-  <div class="flex">
-    <Jp class="mr-4"/> Japanese - Beginner
-  </div>
-</Card>
+<div class="place-self-center lg:flex">
+	<Card class="m-2 bg-gray-300 lg:min-w-2xl dark:bg-gray-600">
+		<p class="mb-8 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
+		<div class="grid-auto-flow grid grid-cols-3 gap-8 lg:grid-cols-5">
+			{#each items as { ref, src, alt }}
+				<div>
+					<a href={ref} target="_blank">
+						<img {src} {alt} class="size-20" />
+					</a>
+					<Tooltip>
+						{alt}
+					</Tooltip>
+				</div>
+			{/each}
+		</div>
+	</Card>
+	<Card class="m-2 h-fit">
+		<p class="mb-8 text-xl font-black dark:text-white">Spoken Languages</p>
+		<div class="flex">
+			<Id class="mr-4" /> Indonesia - Native
+		</div>
+		<div class="flex">
+			<Gb class="mr-4" /> English - Professional
+		</div>
+		<div class="flex">
+			<Jp class="mr-4" /> Japanese - Beginner
+		</div>
+	</Card>
 </div>

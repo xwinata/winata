@@ -36,8 +36,8 @@
 <Card
 	class="place-self-center bg-gray-100 p-4 text-center text-lg drop-shadow-md hover:scale-102 lg:m-8 lg:min-w-4xl"
 >
-	When I'm not writing code, you'll probably find me spending time with my wife, or
-	diving into a game. Music and gaming fuel my creativity, giving me a fresh perspective when I get
-	back to building software. Whether it's keeping rhythm, discovering new sounds, or exploring
-	virtual worlds, I enjoy the balance between technology and creativity.
+	When I'm not writing code, you'll probably find me spending time with my wife, or diving into a
+	game. Music and gaming fuel my creativity, giving me a fresh perspective when I get back to
+	building software. Whether it's keeping rhythm, discovering new sounds, or exploring virtual
+	worlds, I enjoy the balance between technology and creativity.
 </Card>

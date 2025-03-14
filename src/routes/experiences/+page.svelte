@@ -12,7 +12,7 @@
 		'bg-gray-200',
 		'rounded-full',
 		'ring-2',
-		'ring-gray-200',
+		'ring-gray-200'
 	].join(' ');
 </script>
 

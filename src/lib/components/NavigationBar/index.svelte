@@ -8,21 +8,23 @@
 	let responsiveTitle = $state('');
 	afterNavigate((nav) => {
 		activeUrl = nav.to?.url.pathname as string;
-		responsiveTitle = menus.find((menu:Record<string, unknown>) => menu.href === activeUrl).label
+		responsiveTitle = menus.find((menu: Record<string, unknown>) => menu.href === activeUrl).label;
 	});
 </script>
 
 <Navbar
-	class="fixed start-0 top-0 z-20 w-full border-b px-2 py-2.5 sm:px-4"
+	class="fixed start-0 top-0 z-20 w-full border-b bg-zinc-100 px-2 py-2.5 sm:px-4"
 	let:hidden
 	let:toggle
 >
 	<NavBrand href="/">
 		<img src={site.img} class="me-3 h-6 sm:h-9" alt={site.name} />
-		<span class="hidden lg:block self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+		<span
+			class="hidden self-center text-xl font-semibold whitespace-nowrap lg:block dark:text-white"
 			>{site.name} | {responsiveTitle}</span
 		>
-		<span class="block lg:hidden self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+		<span
+			class="block self-center text-xl font-semibold whitespace-nowrap lg:hidden dark:text-white"
 			>{responsiveTitle}</span
 		>
 	</NavBrand>

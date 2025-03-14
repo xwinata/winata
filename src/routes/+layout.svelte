@@ -12,12 +12,8 @@
 		KeyboardOutline,
 		KeyboardSolid,
 		GithubSolid,
-
 		MessagesOutline,
-
 		MessagesSolid
-
-
 	} from 'flowbite-svelte-icons';
 	import { DarkMode } from 'flowbite-svelte';
 
