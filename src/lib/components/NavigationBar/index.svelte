@@ -30,8 +30,12 @@
 	</NavBrand>
 	<NavHamburger on:click={toggle} />
 	<NavUl {activeUrl} {hidden}>
-		{#each menus as menu}
-			<NavLi class="align-center flex h-8 rounded-sm p-1" href={menu.href}>
+		{#each menus as menu, index (index)}
+			<NavLi
+				class="align-center flex h-8 rounded-sm p-1"
+				href={menu.href}
+				on:click={!hidden ? toggle : () => {}}
+			>
 				{#if activeUrl === menu.href}
 					<menu.activeIcon />
 				{:else}

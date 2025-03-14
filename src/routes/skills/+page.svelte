@@ -3,7 +3,7 @@
 
 	import { Id, Gb, Jp } from 'svelte-flags';
 
-	const items = [
+	let items = [
 		{
 			alt: 'golang',
 			src: 'https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg',
@@ -166,7 +166,7 @@
 	<Card class="m-2 bg-gray-300 lg:min-w-2xl dark:bg-gray-600">
 		<p class="mb-8 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
 		<div class="grid-auto-flow grid grid-cols-3 gap-8 lg:grid-cols-5">
-			{#each items as { ref, src, alt }}
+			{#each items as { ref, src, alt }, index (index)}
 				<div>
 					<a href={ref} target="_blank">
 						<img {src} {alt} class="size-20" />

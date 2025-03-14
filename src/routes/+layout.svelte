@@ -37,7 +37,7 @@
 		};
 	});
 
-	const menus = [
+	let menus = [
 		{
 			label: 'Home',
 			href: '/',
