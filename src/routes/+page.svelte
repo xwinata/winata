@@ -65,11 +65,11 @@
 			deliver impactful and reliable solutions.
 		</p>
 	</Card>
-	<div class="hidden lg:block lg:row-span-2 content-center">
+	<div class="hidden lg:block hover:scale-102 lg:row-span-2 content-center">
 		<img
 			src="/images/chris.svg"
 			alt=""
-			class="rounded-full ring-2 h-120"
+			class="rounded-full drop-shadow-lg ring-2 ring-gray-200 h-120"
 		/>
 	</div>
 </div>
