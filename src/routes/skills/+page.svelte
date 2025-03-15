@@ -207,10 +207,10 @@
 	];
 </script>
 
-<div class="place-self-center lg:flex">
-	<Card class="m-2 bg-gray-300 lg:min-w-2xl dark:bg-gray-600">
+<div class="place-content-center md:flex lg:flex">
+	<Card class="m-2 bg-gray-300 md:min-w-xl lg:min-w-2xl dark:bg-gray-600">
 		<p class="mb-8 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
-		<div class="grid-auto-flow grid grid-cols-3 gap-8 lg:grid-cols-5">
+		<div class="grid-auto-flow grid grid-cols-3 gap-8 md:grid-cols-4 lg:grid-cols-5">
 			{#each items as { ref, src, alt }, index (index)}
 				<div>
 					<a href={ref} target="_blank">
