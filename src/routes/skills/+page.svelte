@@ -180,6 +180,16 @@
 			ref: 'https://www.docker.com/'
 		},
 		{
+			alt: 'buddy-works',
+			src: '/images/buddy.svg',
+			ref: 'https://buddy.works/'
+		},
+		{
+			alt: 'argo-cd',
+			src: '/images/argo-cd.svg',
+			ref: 'https://argoproj.github.io/'
+		},
+		{
 			alt: 'travis',
 			src: '/images/travis.svg',
 			ref: 'https://www.travis-ci.com/'
