@@ -3,3 +3,5 @@
 powered by [`sv`](https://github.com/sveltejs/cli).
 
 deployed on [render](https://render.com/)
+
+please, feel free to leave any feedback or issue

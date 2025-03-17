@@ -69,7 +69,7 @@
 </div>
 <Card class={thirdCardClass}>
 	When I'm not writing code, you'll probably find me spending time with my wife, or diving into a
-	game. Music and gaming fuel my creativity, giving me a fresh perspective when I get back to
+	game while listening to musics. Music and gaming fuel my creativity, giving me a fresh perspective when I get back to
 	building software. Whether it's keeping rhythm, discovering new sounds, or exploring virtual
 	worlds, I enjoy the balance between technology and creativity.
 </Card>
