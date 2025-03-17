@@ -11,13 +11,17 @@
 		'ci/cd': 'ci/cd',
 		'event-driven': 'event-driven',
 		'message-broker': 'message-broker',
-		cloud: 'cloud',
+		agile: 'agile',
 		automation: 'automation',
 		backend: 'backend',
+		cli: 'cli',
+		graph: 'graph',
+		cloud: 'cloud',
 		collaboration: 'collaboration',
 		containerization: 'containerization',
 		database: 'database',
 		documentation: 'documentation',
+		formatter: 'formatter',
 		framework: 'framework',
 		frontend: 'frontend',
 		infra: 'infra',
@@ -26,7 +30,6 @@
 		nosql: 'nosql',
 		orm: 'orm',
 		rdbms: 'rdbms',
-		agile: 'agile',
 		testing: 'testing',
 		tool: 'tool'
 	};
@@ -35,7 +38,7 @@
 		[
 			{
 				alt: 'golang',
-				src: 'https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
 				ref: 'https://go.dev/',
 				tags: [tags.backend, tags.language]
 			},
@@ -53,38 +56,50 @@
 			},
 			{
 				alt: 'javascript',
-				src: '/images/js.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
 				ref: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 				tags: [tags.backend, tags.frontend, tags.language]
 			},
 			{
 				alt: 'nodejs',
-				src: 'https://nodejs.org/static/logos/nodejsStackedLight.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
 				ref: 'https://nodejs.org',
 				tags: [tags.backend]
 			},
 			{
 				alt: 'typescript',
-				src: '/images/typescript.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
 				ref: 'https://www.typescriptlang.org/',
 				tags: [tags.backend, tags.frontend, tags.language]
 			},
 			{
 				alt: 'expressjs',
-				src: '/images/expressjs.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
 				ref: 'https://expressjs.com/',
 				tags: [tags.backend, tags.framework]
 			},
 			{
 				alt: 'nestjs',
-				src: 'https://nestjs.com/logo-small-gradient.d792062c.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
 				ref: 'https://nestjs.com/',
 				tags: [tags.backend, tags.framework]
 			},
 			{
+				alt: 'npm',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg',
+				ref: 'https://www.npmjs.com/',
+				tags: [tags.backend, tags.frontend, tags.cli]
+			},
+			{
 				alt: 'sequelize',
-				src: 'https://sequelize.org/img/logo.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
 				ref: 'https://sequelize.org/',
+				tags: [tags.backend, tags.database, tags.orm]
+			},
+			{
+				alt: 'mongoose',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg',
+				ref: 'https://mongoosejs.com/',
 				tags: [tags.backend, tags.database, tags.orm]
 			},
 			{
@@ -101,13 +116,25 @@
 			},
 			{
 				alt: 'jest',
-				src: '/images/jest.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
 				ref: 'https://jestjs.io/',
 				tags: [tags.backend, tags.frontend, tags.testing, tags.automation]
 			},
 			{
+				alt: 'babel',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg',
+				ref: 'https://babeljs.io/',
+				tags: [tags.backend, tags.frontend, tags.formatter]
+			},
+			{
+				alt: 'eslint',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg',
+				ref: 'https://eslint.org/',
+				tags: [tags.backend, tags.frontend, tags.formatter]
+			},
+			{
 				alt: 'python',
-				src: 'https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
 				ref: 'https://www.python.org/',
 				tags: [tags.backend, tags.language]
 			},
@@ -119,31 +146,37 @@
 			},
 			{
 				alt: 'flask',
-				src: '/images/flask.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
 				ref: 'https://flask.palletsprojects.com/',
 				tags: [tags.backend, tags.framework]
 			},
 			{
 				alt: 'php',
-				src: 'https://www.php.net/images/logos/new-php-logo.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
 				ref: 'https://www.php.net/',
 				tags: [tags.backend, tags.language]
 			},
 			{
 				alt: 'drupal',
-				src: '/images/drupal.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original.svg',
 				ref: 'https://drupal.org',
 				tags: [tags.backend, tags.frontend, tags.framework]
 			},
 			{
+				alt: 'composer',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg',
+				ref: 'https://getcomposer.org/',
+				tags: [tags.backend, tags.frontend, tags.cli]
+			},
+			{
 				alt: 'openapi',
-				src: '/images/openapi.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original.svg',
 				ref: 'https://www.openapis.org/',
 				tags: [tags.backend, tags.documentation, tags.automation]
 			},
 			{
 				alt: 'swagger',
-				src: '/images/swagger.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
 				ref: 'https://swagger.io/',
 				tags: [tags.backend, tags.documentation, tags.tool]
 			},
@@ -155,91 +188,109 @@
 			},
 			{
 				alt: 'postman',
-				src: '/images/postman.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
 				ref: 'https://www.postman.com/',
 				tags: [tags.documentation, tags.tool, tags.automation]
 			},
 			{
 				alt: 'react',
-				src: 'images/react.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
 				ref: 'https://react.dev/',
 				tags: [tags.frontend, tags.framework]
 			},
 			{
 				alt: 'vitejs',
-				src: '/images/vitejs.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
 				ref: 'https://vite.dev/',
 				tags: [tags.frontend, tags.framework]
 			},
 			{
 				alt: 'svelte',
-				src: 'https://raw.githubusercontent.com/sveltejs/branding/refs/heads/master/svelte-logo.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
 				ref: 'https://svelte.dev/',
 				tags: [tags.frontend, tags.backend, tags.framework]
 			},
 			{
 				alt: 'nextjs',
-				src: '/images/nextjs.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
 				ref: 'https://nextjs.org/',
 				tags: [tags.frontend, tags.backend, tags.framework]
 			},
 			{
+				alt: 'redux',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg',
+				ref: 'https://redux.js.org/',
+				tags: [tags.frontend]
+			},
+			{
 				alt: 'tailwind-css',
-				src: 'https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
 				ref: 'https://tailwindcss.com/',
 				tags: [tags.frontend, tags.framework]
 			},
 			{
 				alt: 'storybook',
-				src: 'https://raw.githubusercontent.com/storybookjs/brand/main/icon/icon-storybook-default.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original.svg',
 				ref: 'https://storybook.js.org/',
 				tags: [tags.frontend, tags.documentation]
 			},
 			{
 				alt: 'mongodb',
-				src: '/images/mongodb.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
 				ref: 'https://www.mongodb.com/',
 				tags: [tags.backend, tags.nosql, tags.database]
 			},
 			{
 				alt: 'postgreSQL',
-				src: '/images/postgres.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
 				ref: 'https://www.postgresql.org/',
 				tags: [tags.backend, tags.rdbms, tags.database]
 			},
 			{
+				alt: 'mySQL',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+				ref: 'https://www.mysql.com/',
+				tags: [tags.backend, tags.rdbms, tags.database]
+			},
+			{
+				alt: 'neo4j',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neo4j/neo4j-original.svg',
+				ref: 'https://neo4j.com/',
+				tags: [tags.backend, tags.database, tags.graph]
+			},
+			{
 				alt: 'redis',
-				src: '/images/redis.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
 				ref: 'https://redis.io/',
 				tags: [tags.backend, tags.nosql, tags.database]
 			},
 			{
 				alt: 'kafka',
-				src: '/images/kafka.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg',
 				ref: 'https://kafka.apache.org/',
 				tags: [tags.backend, tags['event-driven'], tags.infra]
 			},
 			{
 				alt: 'rabbitmq',
-				src: 'https://www.rabbitmq.com/img/rabbitmq-logo-with-name.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg',
 				ref: 'https://www.rabbitmq.com/',
 				tags: [tags.backend, tags['event-driven'], tags.infra]
 			},
 			{
 				alt: 'github',
-				src: '/images/github.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
 				ref: 'https://github.com/',
 				tags: [tags.tool, tags.collaboration]
 			},
 			{
 				alt: 'kubernetes',
-				src: 'https://raw.githubusercontent.com/kubernetes/kubernetes/refs/heads/master/logo/logo.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg',
 				ref: 'https://kubernetes.io/',
 				tags: [tags.infra, tags.containerization]
 			},
 			{
 				alt: 'docker',
-				src: '/images/docker.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
 				ref: 'https://www.docker.com/',
 				tags: [tags.infra, tags.containerization]
 			},
@@ -251,43 +302,61 @@
 			},
 			{
 				alt: 'argo-cd',
-				src: '/images/argo-cd.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg',
 				ref: 'https://argoproj.github.io/',
 				tags: [tags.infra, tags['ci/cd']]
 			},
 			{
 				alt: 'travis',
-				src: '/images/travis.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/travis/travis-original.svg',
 				ref: 'https://www.travis-ci.com/',
 				tags: [tags.infra, tags['ci/cd']]
 			},
 			{
 				alt: 'jenkins',
-				src: '/images/jenkins.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg',
 				ref: 'https://www.jenkins.io/',
 				tags: [tags.infra, tags['ci/cd']]
+			},
+			{
+				alt: 'elastic-search',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg',
+				ref: 'https://www.elastic.co/elasticsearch',
+				tags: [tags.infra, tags.monitoring, tags.automation]
+			},
+			{
+				alt: 'splunk',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg',
+				ref: 'https://www.splunk.com/',
+				tags: [tags.infra, tags.monitoring, tags.tool, tags.automation]
 			},
 			{
 				alt: 'datadog',
 				src: '/images/datadog.svg',
 				ref: 'https://www.datadoghq.com/',
-				tags: [tags.infra, tags.monitoring, tags.automation]
+				tags: [tags.infra, tags.monitoring, tags.tool, tags.automation]
 			},
 			{
 				alt: 'sentry',
-				src: '/images/sentry.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sentry/sentry-original.svg',
 				ref: 'https://sentry.io/',
-				tags: [tags.infra, tags.monitoring, tags.automation]
+				tags: [tags.infra, tags.monitoring, tags.tool, tags.automation]
+			},
+			{
+				alt: 'sonarqube',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg',
+				ref: 'https://www.sonarsource.com/products/sonarqube/',
+				tags: [tags.testing, tags.tool]
 			},
 			{
 				alt: 'jira',
-				src: '/images/jira.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg',
 				ref: 'https://www.atlassian.com/software/jira',
 				tags: [tags.agile, tags.collaboration, tags.tool]
 			},
 			{
 				alt: 'confluence',
-				src: '/images/confluence.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/confluence/confluence-original.svg',
 				ref: 'https://www.atlassian.com/software/confluence',
 				tags: [tags.agile, tags.collaboration, tags.tool, tags.documentation]
 			},
@@ -299,13 +368,13 @@
 			},
 			{
 				alt: 'amazon web service',
-				src: '/images/aws.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
 				ref: 'https://aws.amazon.com/',
 				tags: [tags.infra, tags.cloud]
 			},
 			{
 				alt: 'google cloud platform',
-				src: '/images/gcp.svg',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
 				ref: 'https://cloud.google.com/',
 				tags: [tags.infra, tags.cloud]
 			}
