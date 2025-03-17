@@ -314,6 +314,9 @@
 			return item.tags.some((tag) => tag.includes(skillFilter)) || item.alt.includes(skillFilter);
 		})
 	);
+
+	let listViewModeButtonColor = $derived(viewMode === 'list' ? 'primary' : 'dark');
+	let gridViewModeButtonColor = $derived(viewMode === 'grid' ? 'primary' : 'dark');
 </script>
 
 <div class="place-content-center md:flex lg:flex">
@@ -322,12 +325,16 @@
 			<p class="mb-8 flex-1 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
 			<div class="flex-1 text-right">
 				<div class="text-right">
-					<Button class="m-1 size-8" on:click={() => (viewMode = 'list')}
-						><RectangleListSolid /></Button
+					<Button
+						class="m-1 size-8"
+						color={listViewModeButtonColor as Button['color']}
+						on:click={() => (viewMode = 'list')}><RectangleListSolid /></Button
 					>
 					<Tooltip defaultClass="">list view</Tooltip>
-					<Button class="m-1 size-8" on:click={() => (viewMode = 'grid')}
-						><ObjectsColumnSolid /></Button
+					<Button
+						class="m-1 size-8"
+						color={gridViewModeButtonColor as Button['color']}
+						on:click={() => (viewMode = 'grid')}><ObjectsColumnSolid /></Button
 					>
 					<Tooltip defaultClass="">grid view</Tooltip>
 				</div>
@@ -343,7 +350,7 @@
 		{#if viewMode === 'list'}
 			<div class="snap-y overflow-y-scroll">
 				{#each items as { ref, src, alt, tags }, index (index)}
-					<a href={ref} target="_blank" class="m-2 flex snap-center">
+					<a href={ref} target="_blank" class="m-2 flex snap-center hover:pl-2">
 						<img {src} {alt} class="mr-4 size-20" />
 						<span>
 							<p class="text-lg">{alt}</p>
@@ -356,10 +363,10 @@
 			</div>
 		{:else}
 			<div
-				class="grid-auto-flow grid snap-y grid-cols-3 gap-8 overflow-y-scroll md:grid-cols-4 lg:grid-cols-5"
+				class="grid-auto-flow grid snap-y grid-cols-3 gap-8 overflow-x-hidden overflow-y-scroll md:grid-cols-4 lg:grid-cols-5"
 			>
 				{#each items as { ref, src, alt }, index (index)}
-					<div class="snap-center">
+					<div class="snap-center hover:scale-108">
 						<a href={ref} target="_blank">
 							<img {src} {alt} class="size-20" />
 						</a>

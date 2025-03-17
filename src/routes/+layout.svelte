@@ -15,7 +15,9 @@
 		MessagesOutline,
 		MessagesSolid
 	} from 'flowbite-svelte-icons';
-	import { DarkMode } from 'flowbite-svelte';
+	import { DarkMode, Footer } from 'flowbite-svelte';
+
+	let urlClass = 'underline hover:text-primary-600';
 
 	let site = {
 		name: 'Christian Winata',
@@ -74,10 +76,19 @@
 <svelte:head>
 	<title>Christian Winata</title>
 </svelte:head>
-<DarkMode class="fixed right-4 bottom-4 z-99" />
+<DarkMode class="fixed right-4 bottom-4 z-99 hover:bg-gray-300" />
 <div class="relative min-h-screen dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />
 	<div class="px-2 pt-18 pb-4 md:pt-24 lg:pt-24">
 		{@render children()}
 	</div>
 </div>
+<Footer class="h-20 bg-zinc-100 p-2 dark:bg-gray-800 dark:text-gray-100">
+	<p class="h-full content-center text-center text-xs md:mr-14 md:text-right">
+		Built with <a href="https://svelte.dev/" class={urlClass}>Svelte</a> and
+		<a href="https://tailwindcss.com/" class={urlClass}>Tailwind CSS</a>, coded on <br /><a
+			href="https://code.visualstudio.com/"
+			class={urlClass}>Visual Studio Code</a
+		>, and deployed with <a href="https://render.com/" class={urlClass}>Render</a>.
+	</p>
+</Footer>
