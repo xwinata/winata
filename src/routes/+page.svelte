@@ -2,52 +2,46 @@
 	import { Card } from 'flowbite-svelte';
 
 	let firstCardClass = [
-		"bg-gray-100",
-		"m-2",
-		"p-4",
-		"drop-shadow-md",
-		"hover:scale-102",
-		"justify-self-center",
-		"md:m-8",
-		"md:min-w-2xl",
-		"lg:ml-32",
+		'bg-gray-100',
+		'm-2',
+		'p-4',
+		'drop-shadow-md',
+		'hover:scale-102',
+		'justify-self-center',
+		'md:m-8',
+		'md:min-w-2xl',
+		'lg:ml-32'
 	].join(' ');
 
 	let secondCardClass = [
-		"bg-gray-100",
-		"m-2",
-		"p-4",
-		"drop-shadow-md",
-		"hover:scale-102",
-		"justify-self-center",
-		"md:m-8",
-		"md:min-w-2xl",
-		"lg:mr-32",
+		'bg-gray-100',
+		'm-2',
+		'p-4',
+		'drop-shadow-md',
+		'hover:scale-102',
+		'justify-self-center',
+		'md:m-8',
+		'md:min-w-2xl',
+		'lg:mr-32'
 	].join(' ');
 
 	let thirdCardClass = [
-		"bg-gray-100",
-		"p-4",
-		"m-2",
-		"text-center",
-		"text-lg",
-		"drop-shadow-md",
-		"hover:scale-102",
-		"justify-self-center",
-		"md:min-w-2xl",
-		"md:m-8",
-		"lg:min-w-4xl"
+		'bg-gray-100',
+		'p-4',
+		'm-2',
+		'text-center',
+		'text-lg',
+		'drop-shadow-md',
+		'hover:scale-102',
+		'justify-self-center',
+		'md:min-w-2xl',
+		'md:m-8',
+		'lg:min-w-4xl'
 	].join(' ');
 </script>
 
 <div class="lg:grid lg:grid-flow-col lg:grid-rows-2">
-	<Card
-		img="/images/chris.svg"
-		horizontal
-		reverse
-		class={firstCardClass}
-		imgClass="lg:hidden"
-	>
+	<Card img="/images/chris.svg" horizontal reverse class={firstCardClass} imgClass="lg:hidden">
 		<p class="mb-2 text-center text-4xl">Hi! i'm Christian Winata</p>
 		<p class="text-center text-lg">
 			a software engineer specializing in building scalable and high-performance applications that
@@ -65,17 +59,15 @@
 			deliver impactful and reliable solutions.
 		</p>
 	</Card>
-	<div class="hidden lg:block hover:scale-102 lg:row-span-2 content-center">
+	<div class="hidden content-center hover:scale-102 lg:row-span-2 lg:block">
 		<img
 			src="/images/chris.svg"
 			alt=""
-			class="rounded-full drop-shadow-lg ring-2 ring-gray-200 h-120"
+			class="h-120 rounded-full ring-2 ring-gray-200 drop-shadow-lg"
 		/>
 	</div>
 </div>
-<Card
-	class={thirdCardClass}
->
+<Card class={thirdCardClass}>
 	When I'm not writing code, you'll probably find me spending time with my wife, or diving into a
 	game. Music and gaming fuel my creativity, giving me a fresh perspective when I get back to
 	building software. Whether it's keeping rhythm, discovering new sounds, or exploring virtual

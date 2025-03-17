@@ -74,18 +74,12 @@
 				new features, resolve bugs, and ensure site stability. My role involved maintaining the
 				platform, optimizing performance, and contributing to a seamless user experience.`
 		}
-	]
+	];
 </script>
 
 <Card class="justify-self-center md:min-w-2xl lg:min-w-4xl">
 	<Timeline order="vertical">
-		{#each exps as {
-			date,
-			title,
-			imgAlt: alt,
-			imgSrc: src,
-			desc
-		}}
+		{#each exps as { date, title, imgAlt: alt, imgSrc: src, desc }}
 			<TimelineItem {date} {title}>
 				<svelte:fragment slot="icon">
 					<img {alt} {src} class={companyLogoClass} />

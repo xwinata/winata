@@ -71,7 +71,6 @@
 	];
 </script>
 
-
 <svelte:head>
 	<title>Christian Winata</title>
 </svelte:head>
