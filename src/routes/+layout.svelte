@@ -19,6 +19,14 @@
 
 	let urlClass = 'underline hover:text-primary-600';
 
+	let contentRef;
+
+	function updateCoordinate({ clientX, clientY }) {
+		if (!contentRef) return;
+		contentRef.style.setProperty('--radialx', `${clientX}px`);
+		contentRef.style.setProperty('--radialy', `${clientY}px`);
+	}
+
 	let site = {
 		name: 'Christian Winata',
 		href: '/',
@@ -76,10 +84,18 @@
 <svelte:head>
 	<title>Christian Winata</title>
 </svelte:head>
-<DarkMode class="fixed right-4 bottom-4 z-99 hover:bg-gray-300" />
-<div class="relative min-h-screen dark:bg-gray-700 dark:text-white">
+<DarkMode
+	class="fixed right-4 bottom-4 z-99 hover:bg-gray-300"
+	onChange={() => (isDarkMode = !isDarkMode)}
+/>
+<div class="relative min-h-fit dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />
-	<div class="px-2 pt-18 pb-4 md:pt-24 lg:pt-24">
+	<div
+		bind:this={contentRef}
+		onmousemove={updateCoordinate}
+		role="article"
+		class={`radialTracker px-2 pt-18 pb-4 md:pt-24 lg:pt-24`}
+	>
 		{@render children()}
 	</div>
 </div>
@@ -92,3 +108,13 @@
 		>, and deployed with <a href="https://render.com/" class={urlClass}>Render</a>.
 	</p>
 </Footer>
+
+<style>
+	.radialTracker {
+		background: radial-gradient(
+			600px at var(--radialx, 50%) var(--radialy, 50%),
+			rgba(99, 99, 99, 0.2),
+			transparent 80%
+		);
+	}
+</style>

@@ -77,7 +77,7 @@
 	];
 </script>
 
-<Card class="justify-self-center md:min-w-2xl lg:min-w-4xl">
+<Card class="justify-self-center bg-gray-100/50 md:min-w-2xl lg:min-w-4xl dark:bg-gray-800/50">
 	<Timeline order="vertical">
 		{#each exps as { date, title, imgAlt: alt, imgSrc: src, desc }}
 			<TimelineItem {date} {title}>

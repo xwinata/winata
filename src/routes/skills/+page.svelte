@@ -407,7 +407,7 @@
 </script>
 
 <div class="place-content-center md:flex lg:flex">
-	<Card class="m-2 max-h-150 bg-gray-300 md:min-w-xl lg:min-w-2xl dark:bg-gray-600">
+	<Card class="m-2 max-h-150 bg-gray-300/50 md:min-w-xl lg:min-w-2xl dark:bg-gray-600/50">
 		<div class="flex">
 			<p class="mb-8 flex-1 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
 			<div class="flex-1 text-right">
@@ -463,7 +463,7 @@
 			</div>
 		{/if}
 	</Card>
-	<Card class="m-2 h-fit">
+	<Card class="m-2 h-fit bg-gray-100/50 dark:bg-gray-800/50">
 		<p class="mb-8 text-xl font-black dark:text-white">Spoken Languages</p>
 		<div class="flex">
 			<Id class="mr-4" /> Indonesia - Native

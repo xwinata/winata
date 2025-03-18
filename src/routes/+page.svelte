@@ -2,7 +2,8 @@
 	import { Card } from 'flowbite-svelte';
 
 	let firstCardClass = [
-		'bg-gray-100',
+		'bg-gray-100/50',
+		'dark:bg-gray-800/50',
 		'm-2',
 		'p-4',
 		'drop-shadow-md',
@@ -14,7 +15,8 @@
 	].join(' ');
 
 	let secondCardClass = [
-		'bg-gray-100',
+		'bg-gray-100/50',
+		'dark:bg-gray-800/50',
 		'm-2',
 		'p-4',
 		'drop-shadow-md',
@@ -26,7 +28,8 @@
 	].join(' ');
 
 	let thirdCardClass = [
-		'bg-gray-100',
+		'bg-gray-100/50',
+		'dark:bg-gray-800/50',
 		'p-4',
 		'm-2',
 		'text-center',
