@@ -108,13 +108,3 @@
 		>, and deployed with <a href="https://render.com/" class={urlClass}>Render</a>.
 	</p>
 </Footer>
-
-<style>
-	.radialTracker {
-		background: radial-gradient(
-			600px at var(--radialx, 50%) var(--radialy, 50%),
-			rgba(99, 99, 99, 0.2),
-			transparent 80%
-		);
-	}
-</style>

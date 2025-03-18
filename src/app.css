@@ -22,3 +22,20 @@
 body * {
 	@apply transition-all duration-200;
 }
+
+@layer utilities {
+	.radialTracker {
+		background: radial-gradient(
+			600px at var(--radialx, 50%) var(--radialy, 50%),
+			rgba(255, 213, 204, 0.6),
+			transparent 80%
+		);
+		@variant dark {
+			background: radial-gradient(
+				600px at var(--radialx, 50%) var(--radialy, 50%),
+				rgba(29, 78, 216, 0.2),
+				transparent 80%
+			);
+		}
+	}
+}
