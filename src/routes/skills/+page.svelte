@@ -8,28 +8,34 @@
 	let viewMode = $state('grid');
 
 	let tags = {
+		'a/b-testing': 'a/b-testing',
 		'ci/cd': 'ci/cd',
 		'event-driven': 'event-driven',
 		'message-broker': 'message-broker',
 		agile: 'agile',
+		api: 'api',
 		automation: 'automation',
 		backend: 'backend',
 		cli: 'cli',
-		graph: 'graph',
 		cloud: 'cloud',
 		collaboration: 'collaboration',
 		containerization: 'containerization',
 		database: 'database',
+		devops: 'devops',
 		documentation: 'documentation',
+		'feature-flags': 'feature-flags',
 		formatter: 'formatter',
 		framework: 'framework',
 		frontend: 'frontend',
+		graph: 'graph',
 		infra: 'infra',
 		language: 'language',
-		monitoring: 'monitoring',
+		microservice: 'microservice',
+		monitoring: 'observability/monitoring',
 		nosql: 'nosql',
 		orm: 'orm',
 		rdbms: 'rdbms',
+		security: 'security',
 		testing: 'testing',
 		tool: 'tool'
 	};
@@ -52,7 +58,7 @@
 				alt: 'echo',
 				src: 'https://echo.labstack.com/img/logo-light.svg',
 				ref: 'https://echo.labstack.com/',
-				tags: [tags.backend, tags.framework]
+				tags: [tags.backend, tags.framework, tags.api]
 			},
 			{
 				alt: 'javascript',
@@ -64,7 +70,7 @@
 				alt: 'nodejs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
 				ref: 'https://nodejs.org',
-				tags: [tags.backend]
+				tags: [tags.backend, tags.cli]
 			},
 			{
 				alt: 'typescript',
@@ -76,13 +82,13 @@
 				alt: 'expressjs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
 				ref: 'https://expressjs.com/',
-				tags: [tags.backend, tags.framework]
+				tags: [tags.backend, tags.framework, tags.api]
 			},
 			{
 				alt: 'nestjs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
 				ref: 'https://nestjs.com/',
-				tags: [tags.backend, tags.framework]
+				tags: [tags.backend, tags.framework, tags.api]
 			},
 			{
 				alt: 'npm',
@@ -148,7 +154,7 @@
 				alt: 'flask',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
 				ref: 'https://flask.palletsprojects.com/',
-				tags: [tags.backend, tags.framework]
+				tags: [tags.backend, tags.framework, tags.api]
 			},
 			{
 				alt: 'php',
@@ -160,7 +166,7 @@
 				alt: 'drupal',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original.svg',
 				ref: 'https://drupal.org',
-				tags: [tags.backend, tags.frontend, tags.framework]
+				tags: [tags.backend, tags.frontend, tags.framework, tags.api]
 			},
 			{
 				alt: 'composer',
@@ -172,25 +178,31 @@
 				alt: 'openapi',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original.svg',
 				ref: 'https://www.openapis.org/',
-				tags: [tags.backend, tags.documentation, tags.automation]
+				tags: [tags.backend, tags.documentation, tags.automation, tags.api]
 			},
 			{
 				alt: 'swagger',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
 				ref: 'https://swagger.io/',
-				tags: [tags.backend, tags.documentation, tags.tool]
+				tags: [tags.backend, tags.documentation, tags.tool, tags.api]
 			},
 			{
 				alt: 'openapi-generator',
 				src: 'https://openapi-generator.tech/img/mono-logo.svg',
 				ref: 'https://openapi-generator.tech/',
-				tags: [tags.backend, tags.documentation, tags.automation]
+				tags: [tags.backend, tags.documentation, tags.automation, tags.api]
 			},
 			{
 				alt: 'postman',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
 				ref: 'https://www.postman.com/',
-				tags: [tags.documentation, tags.tool, tags.automation]
+				tags: [tags.documentation, tags.tool, tags.automation, tags.api]
+			},
+			{
+				alt: 'oauth',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg',
+				ref: 'https://oauth.net/',
+				tags: [tags.backend, tags.frontend, tags.security]
 			},
 			{
 				alt: 'react',
@@ -214,7 +226,7 @@
 				alt: 'nextjs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
 				ref: 'https://nextjs.org/',
-				tags: [tags.frontend, tags.backend, tags.framework]
+				tags: [tags.frontend, tags.backend, tags.framework, tags.api]
 			},
 			{
 				alt: 'redux',
@@ -268,13 +280,13 @@
 				alt: 'kafka',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg',
 				ref: 'https://kafka.apache.org/',
-				tags: [tags.backend, tags['event-driven'], tags.infra]
+				tags: [tags.backend, tags['event-driven'], tags.infra, tags.microservice]
 			},
 			{
 				alt: 'rabbitmq',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg',
 				ref: 'https://www.rabbitmq.com/',
-				tags: [tags.backend, tags['event-driven'], tags.infra]
+				tags: [tags.backend, tags['event-driven'], tags.infra, tags.microservice]
 			},
 			{
 				alt: 'github',
@@ -286,13 +298,13 @@
 				alt: 'kubernetes',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg',
 				ref: 'https://kubernetes.io/',
-				tags: [tags.infra, tags.containerization]
+				tags: [tags.infra, tags.containerization, tags.devops]
 			},
 			{
 				alt: 'docker',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
 				ref: 'https://www.docker.com/',
-				tags: [tags.infra, tags.containerization]
+				tags: [tags.infra, tags.containerization, tags.devops]
 			},
 			{
 				alt: 'buddy-works',
@@ -367,16 +379,22 @@
 				tags: [tags.tool, tags.frontend, tags.backend]
 			},
 			{
+				alt: 'launchdarkly',
+				src: '/images/launchdarkly.svg',
+				ref: 'https://launchdarkly.com/',
+				tags: [tags.tool, tags['a/b-testing'], tags['feature-flags']]
+			},
+			{
 				alt: 'amazon web service',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
 				ref: 'https://aws.amazon.com/',
-				tags: [tags.infra, tags.cloud]
+				tags: [tags.infra, tags.cloud, tags.devops]
 			},
 			{
 				alt: 'google cloud platform',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
 				ref: 'https://cloud.google.com/',
-				tags: [tags.infra, tags.cloud]
+				tags: [tags.infra, tags.cloud, tags.devops]
 			}
 		].filter((item) => {
 			if (skillFilter === '') return true;
@@ -395,17 +413,15 @@
 			<div class="flex-1 text-right">
 				<div class="text-right">
 					<Button
-						class="m-1 size-8"
+						class="mx-1 my-2 size-8"
 						color={listViewModeButtonColor as Button['color']}
 						on:click={() => (viewMode = 'list')}><RectangleListSolid /></Button
 					>
-					<Tooltip defaultClass="">list view</Tooltip>
 					<Button
-						class="m-1 size-8"
+						class="mx-1 my-2 size-8"
 						color={gridViewModeButtonColor as Button['color']}
 						on:click={() => (viewMode = 'grid')}><ObjectsColumnSolid /></Button
 					>
-					<Tooltip defaultClass="">grid view</Tooltip>
 				</div>
 				<ButtonGroup class="mb-4">
 					<InputAddon>
@@ -422,7 +438,7 @@
 					<a href={ref} target="_blank" class="m-2 flex snap-center hover:pl-2">
 						<img {src} {alt} class="mr-4 size-20" />
 						<span>
-							<p class="text-lg">{alt}</p>
+							<p class="text-lg">{alt} | {ref.length < 28 ? ref : ref.substring(0, 28) + '...'}</p>
 							{#each tags as string[] as tag}
 								<Button size="xs" color="blue" pill class="m-1">{tag}</Button>
 							{/each}
