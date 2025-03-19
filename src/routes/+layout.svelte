@@ -98,7 +98,9 @@
 </div>
 <Footer class="h-20 bg-zinc-100 p-2 dark:bg-gray-800 dark:text-gray-100">
 	<p class="h-full content-center text-center text-xs md:mr-14 md:text-right">
-		Built with <a href="https://svelte.dev/" class={urlClass}>Svelte</a> and
+		Built with <a href="https://svelte.dev/" class={urlClass}>Svelte</a> using
+		<a href="https://flowbite-svelte.com/" class={urlClass}>Flowbite</a>
+		and
 		<a href="https://tailwindcss.com/" class={urlClass}>Tailwind CSS</a>, coded on <br /><a
 			href="https://code.visualstudio.com/"
 			class={urlClass}>Visual Studio Code</a
