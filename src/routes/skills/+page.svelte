@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, ButtonGroup, Card, Input, InputAddon, Label, Tooltip } from 'flowbite-svelte';
+	import { Button, ButtonGroup, Card, Input, InputAddon, Tooltip } from 'flowbite-svelte';
 	import { FilterSolid, ObjectsColumnSolid, RectangleListSolid } from 'flowbite-svelte-icons';
 
 	import { Id, Gb, Jp } from 'svelte-flags';
@@ -439,7 +439,7 @@
 						<img {src} {alt} class="mr-4 size-20" />
 						<span>
 							<p class="text-lg">{alt} | {ref.length < 28 ? ref : ref.substring(0, 28) + '...'}</p>
-							{#each tags as string[] as tag}
+							{#each tags as string[] as tag, index (index)}
 								<Button size="xs" color="blue" pill class="m-1">{tag}</Button>
 							{/each}
 						</span>

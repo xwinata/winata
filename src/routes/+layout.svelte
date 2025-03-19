@@ -19,12 +19,12 @@
 
 	let urlClass = 'underline hover:text-primary-600';
 
-	let contentRef;
+	let contentRef: HTMLElement;
 
-	function updateCoordinate({ clientX, clientY }) {
+	function updateCoordinate({ pageX, pageY }: MouseEvent) {
 		if (!contentRef) return;
-		contentRef.style.setProperty('--radialx', `${clientX}px`);
-		contentRef.style.setProperty('--radialy', `${clientY}px`);
+		contentRef.style.setProperty('--radialx', `${pageX}px`);
+		contentRef.style.setProperty('--radialy', `${pageY}px`);
 	}
 
 	let site = {
@@ -84,17 +84,14 @@
 <svelte:head>
 	<title>Christian Winata</title>
 </svelte:head>
-<DarkMode
-	class="fixed right-4 bottom-4 z-99 hover:bg-gray-300"
-	onChange={() => (isDarkMode = !isDarkMode)}
-/>
+<DarkMode class="fixed right-4 bottom-4 z-99 hover:bg-gray-300" />
 <div class="relative min-h-fit dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />
 	<div
 		bind:this={contentRef}
 		onmousemove={updateCoordinate}
 		role="article"
-		class={`radialTracker px-2 pt-18 pb-4 md:pt-24 lg:pt-24`}
+		class="radialTracker px-2 pt-18 pb-4 md:pt-24 lg:pt-24"
 	>
 		{@render children()}
 	</div>

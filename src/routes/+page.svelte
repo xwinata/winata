@@ -1,44 +1,27 @@
 <script>
 	import { Card } from 'flowbite-svelte';
 
-	let firstCardClass = [
+	let commonCardStyles = [
 		'bg-gray-100/50',
 		'dark:bg-gray-800/50',
-		'm-2',
-		'p-4',
+		'hover:text-primary-700',
+		'hover:dark:text-sky-300',
 		'drop-shadow-md',
-		'hover:scale-102',
 		'justify-self-center',
 		'md:m-8',
-		'md:min-w-2xl',
-		'lg:ml-32'
-	].join(' ');
+		'md:min-w-2xl'
+	];
 
-	let secondCardClass = [
-		'bg-gray-100/50',
-		'dark:bg-gray-800/50',
-		'm-2',
-		'p-4',
-		'drop-shadow-md',
-		'hover:scale-102',
-		'justify-self-center',
-		'md:m-8',
-		'md:min-w-2xl',
-		'lg:mr-32'
-	].join(' ');
+	let firstCardClass = [...commonCardStyles, 'm-2', 'p-4', 'lg:ml-32'].join(' ');
+
+	let secondCardClass = [...commonCardStyles, 'm-2', 'p-4', 'lg:mr-32'].join(' ');
 
 	let thirdCardClass = [
-		'bg-gray-100/50',
-		'dark:bg-gray-800/50',
+		...commonCardStyles,
 		'p-4',
 		'm-2',
 		'text-center',
 		'text-lg',
-		'drop-shadow-md',
-		'hover:scale-102',
-		'justify-self-center',
-		'md:min-w-2xl',
-		'md:m-8',
 		'lg:min-w-4xl'
 	].join(' ');
 </script>
@@ -62,11 +45,11 @@
 			deliver impactful and reliable solutions.
 		</p>
 	</Card>
-	<div class="hidden content-center hover:scale-102 lg:row-span-2 lg:block">
+	<div class="hidden content-center lg:row-span-2 lg:block">
 		<img
 			src="/images/chris.svg"
 			alt=""
-			class="h-120 rounded-full ring-2 ring-gray-200 drop-shadow-lg"
+			class="hover:ring-primary-400 h-120 rounded-full ring-2 ring-gray-200 drop-shadow-lg hover:dark:ring-sky-300"
 		/>
 	</div>
 </div>
