@@ -23,6 +23,27 @@ body * {
 	@apply transition-all duration-200;
 }
 
+@layer base {
+	::-webkit-scrollbar {
+		@apply w-2;
+	}
+	::-webkit-scrollbar-track {
+		@apply rounded-full bg-gray-100;
+	}
+	::-webkit-scrollbar-thumb {
+		@apply rounded-full bg-gray-400;
+	}
+
+	.dark {
+		::-webkit-scrollbar-track {
+			@apply bg-neutral-700;
+		}
+		::-webkit-scrollbar-thumb {
+			@apply bg-neutral-500;
+		}
+	}
+}
+
 @layer utilities {
 	.radialTracker {
 		background: radial-gradient(
