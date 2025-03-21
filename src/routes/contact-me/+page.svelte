@@ -5,7 +5,7 @@
 	let socClass = `${linkHoverClass} m-2 size-10 hover:text-primary-700`;
 </script>
 
-<div class="flex h-screen">
+<div class="flex lg:min-h-[calc(100vh-20vh)]">
 	<div class="m-auto text-center text-gray-600 dark:text-white">
 		<p class="text-5xl">you can send me email through:</p>
 		<a class={linkHoverClass} href="mailto:christian.double.u@gmail.com">

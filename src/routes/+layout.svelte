@@ -91,7 +91,7 @@
 		bind:this={contentRef}
 		onmousemove={updateCoordinate}
 		role="article"
-		class="radialTracker px-2 pt-18 pb-4 md:pt-24 lg:pt-24"
+		class="radialTracker px-2 pt-18 pb-4 md:pt-24 lg:pt-24 lg:min-h-screen"
 	>
 		{@render children()}
 	</div>

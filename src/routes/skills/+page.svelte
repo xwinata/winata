@@ -11,6 +11,7 @@
 		'a/b-testing': 'a/b-testing',
 		'ci/cd': 'ci/cd',
 		'event-driven': 'event-driven',
+		'feature-flags': 'feature-flags',
 		'message-broker': 'message-broker',
 		agile: 'agile',
 		api: 'api',
@@ -23,21 +24,24 @@
 		database: 'database',
 		devops: 'devops',
 		documentation: 'documentation',
-		'feature-flags': 'feature-flags',
 		formatter: 'formatter',
 		framework: 'framework',
 		frontend: 'frontend',
+		golang: 'golang',
 		graph: 'graph',
 		infra: 'infra',
+		javascript: 'javascript/typescript',
 		language: 'language',
 		microservice: 'microservice',
 		monitoring: 'observability/monitoring',
 		nosql: 'nosql',
 		orm: 'orm',
+		php: 'php',
+		python: 'python',
 		rdbms: 'rdbms',
 		security: 'security',
 		testing: 'testing',
-		tool: 'tool'
+		tool: 'tool',
 	};
 
 	let items = $derived(
@@ -52,13 +56,13 @@
 				alt: 'gorm',
 				src: 'https://gorm.io/gorm.svg',
 				ref: 'https://gorm.io/',
-				tags: [tags.backend, tags.database, tags.orm]
+				tags: [tags.backend, tags.database, tags.orm, tags.golang]
 			},
 			{
 				alt: 'echo',
 				src: 'https://echo.labstack.com/img/logo-light.svg',
 				ref: 'https://echo.labstack.com/',
-				tags: [tags.backend, tags.framework, tags.api]
+				tags: [tags.backend, tags.framework, tags.api, tags.golang]
 			},
 			{
 				alt: 'javascript',
@@ -70,7 +74,7 @@
 				alt: 'nodejs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
 				ref: 'https://nodejs.org',
-				tags: [tags.backend, tags.cli]
+				tags: [tags.backend, tags.cli, tags.javascript]
 			},
 			{
 				alt: 'typescript',
@@ -82,61 +86,61 @@
 				alt: 'expressjs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
 				ref: 'https://expressjs.com/',
-				tags: [tags.backend, tags.framework, tags.api]
+				tags: [tags.backend, tags.framework, tags.api, tags.javascript]
 			},
 			{
 				alt: 'nestjs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
 				ref: 'https://nestjs.com/',
-				tags: [tags.backend, tags.framework, tags.api]
+				tags: [tags.backend, tags.framework, tags.api, tags.javascript]
 			},
 			{
 				alt: 'npm',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg',
 				ref: 'https://www.npmjs.com/',
-				tags: [tags.backend, tags.frontend, tags.cli]
+				tags: [tags.backend, tags.frontend, tags.cli, tags.javascript]
 			},
 			{
 				alt: 'sequelize',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
 				ref: 'https://sequelize.org/',
-				tags: [tags.backend, tags.database, tags.orm]
+				tags: [tags.backend, tags.database, tags.orm, tags.javascript]
 			},
 			{
 				alt: 'mongoose',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg',
 				ref: 'https://mongoosejs.com/',
-				tags: [tags.backend, tags.database, tags.orm]
+				tags: [tags.backend, tags.database, tags.orm, tags.javascript]
 			},
 			{
 				alt: 'drizzleORM',
 				src: 'https://raw.githubusercontent.com/drizzle-team/drizzle-orm/main/misc/readme/logo-github-sq-dark.svg',
 				ref: 'https://orm.drizzle.team/',
-				tags: [tags.backend, tags.database, tags.orm]
+				tags: [tags.backend, tags.database, tags.orm, tags.javascript]
 			},
 			{
 				alt: 'typeORM',
 				src: '/images/typeorm.svg',
 				ref: 'https://typeorm.io/',
-				tags: [tags.backend, tags.database, tags.orm]
+				tags: [tags.backend, tags.database, tags.orm, tags.javascript]
 			},
 			{
 				alt: 'jest',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
 				ref: 'https://jestjs.io/',
-				tags: [tags.backend, tags.frontend, tags.testing, tags.automation]
+				tags: [tags.backend, tags.frontend, tags.testing, tags.automation, tags.javascript]
 			},
 			{
 				alt: 'babel',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg',
 				ref: 'https://babeljs.io/',
-				tags: [tags.backend, tags.frontend, tags.formatter]
+				tags: [tags.backend, tags.frontend, tags.formatter, tags.javascript]
 			},
 			{
 				alt: 'eslint',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg',
 				ref: 'https://eslint.org/',
-				tags: [tags.backend, tags.frontend, tags.formatter]
+				tags: [tags.backend, tags.frontend, tags.formatter, tags.javascript]
 			},
 			{
 				alt: 'python',
@@ -148,13 +152,13 @@
 				alt: 'robot',
 				src: '/images/robot.svg',
 				ref: 'https://robotframework.org/',
-				tags: [tags.backend, tags.framework, tags.testing]
+				tags: [tags.backend, tags.framework, tags.testing, tags.python]
 			},
 			{
 				alt: 'flask',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
 				ref: 'https://flask.palletsprojects.com/',
-				tags: [tags.backend, tags.framework, tags.api]
+				tags: [tags.backend, tags.framework, tags.api, tags.python]
 			},
 			{
 				alt: 'php',
@@ -166,13 +170,13 @@
 				alt: 'drupal',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original.svg',
 				ref: 'https://drupal.org',
-				tags: [tags.backend, tags.frontend, tags.framework, tags.api]
+				tags: [tags.backend, tags.frontend, tags.framework, tags.api, tags.php]
 			},
 			{
 				alt: 'composer',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg',
 				ref: 'https://getcomposer.org/',
-				tags: [tags.backend, tags.frontend, tags.cli]
+				tags: [tags.backend, tags.frontend, tags.cli, tags.php]
 			},
 			{
 				alt: 'openapi',
@@ -208,31 +212,31 @@
 				alt: 'react',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
 				ref: 'https://react.dev/',
-				tags: [tags.frontend, tags.framework]
+				tags: [tags.frontend, tags.framework, tags.javascript]
 			},
 			{
 				alt: 'vitejs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
 				ref: 'https://vite.dev/',
-				tags: [tags.frontend, tags.framework]
+				tags: [tags.frontend, tags.framework, tags.javascript]
 			},
 			{
 				alt: 'svelte',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
 				ref: 'https://svelte.dev/',
-				tags: [tags.frontend, tags.backend, tags.framework]
+				tags: [tags.frontend, tags.backend, tags.framework, tags.javascript]
 			},
 			{
 				alt: 'nextjs',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
 				ref: 'https://nextjs.org/',
-				tags: [tags.frontend, tags.backend, tags.framework, tags.api]
+				tags: [tags.frontend, tags.backend, tags.framework, tags.api, tags.javascript]
 			},
 			{
 				alt: 'redux',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg',
 				ref: 'https://redux.js.org/',
-				tags: [tags.frontend]
+				tags: [tags.frontend, tags.javascript]
 			},
 			{
 				alt: 'tailwind-css',
@@ -244,7 +248,7 @@
 				alt: 'storybook',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original.svg',
 				ref: 'https://storybook.js.org/',
-				tags: [tags.frontend, tags.documentation]
+				tags: [tags.frontend, tags.documentation, tags.javascript]
 			},
 			{
 				alt: 'mongodb',
