@@ -37,9 +37,9 @@
 				on:click={!hidden ? toggle : () => {}}
 			>
 				{#if activeUrl === menu.href}
-					<menu.activeIcon />
+					<menu.activeIcon style="transition-property: none;" />
 				{:else}
-					<menu.icon />
+					<menu.icon style="transition-property: none;" />
 				{/if}
 				{menu.label}
 			</NavLi>

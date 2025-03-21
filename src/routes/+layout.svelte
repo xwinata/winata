@@ -84,7 +84,7 @@
 <svelte:head>
 	<title>Christian Winata</title>
 </svelte:head>
-<DarkMode class="fixed right-4 bottom-4 z-99 hover:bg-gray-300" />
+<DarkMode class="fixed right-4 bottom-4 z-99 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300" />
 <div class="relative min-h-fit dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />
 	<div
