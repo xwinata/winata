@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, ButtonGroup, Card, Input, InputAddon, Tooltip } from 'flowbite-svelte';
+	import { Button, ButtonGroup, Card, Input, InputAddon, Li, List, Tooltip } from 'flowbite-svelte';
 	import { FilterSolid, ObjectsColumnSolid, RectangleListSolid } from 'flowbite-svelte-icons';
 
 	import { Id, Gb, Jp } from 'svelte-flags';
@@ -39,6 +39,7 @@
 		php: 'php',
 		python: 'python',
 		rdbms: 'rdbms',
+		rpc: 'rpc',
 		security: 'security',
 		testing: 'testing',
 		tool: 'tool',
@@ -63,6 +64,12 @@
 				src: 'https://echo.labstack.com/img/logo-light.svg',
 				ref: 'https://echo.labstack.com/',
 				tags: [tags.backend, tags.framework, tags.api, tags.golang]
+			},
+			{
+				alt: 'grpc',
+				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grpc/grpc-original.svg',
+				ref: 'https://grpc.io/',
+				tags: [tags.backend, tags.rpc, tags.golang]
 			},
 			{
 				alt: 'javascript',
@@ -299,6 +306,12 @@
 				tags: [tags.tool, tags.collaboration]
 			},
 			{
+				alt: 'kong',
+				src: '/images/kong.svg',
+				ref: 'https://konghq.com/',
+				tags: [tags.infra, tags.tool, tags.security, tags.api, tags.microservice]
+			},
+			{
 				alt: 'kubernetes',
 				src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg',
 				ref: 'https://kubernetes.io/',
@@ -410,7 +423,7 @@
 	let gridViewModeButtonColor = $derived(viewMode === 'grid' ? 'primary' : 'dark');
 </script>
 
-<div class="place-content-center md:flex lg:flex">
+<div class="place-content-center pr-2 md:flex lg:flex">
 	<Card class="m-2 max-h-150 bg-gray-300/50 md:min-w-xl lg:min-w-2xl dark:bg-gray-600/50">
 		<div class="flex">
 			<p class="mb-8 flex-1 text-xl font-black dark:text-white">Tech Stacks & Tools i use</p>
@@ -467,16 +480,38 @@
 			</div>
 		{/if}
 	</Card>
-	<Card class="m-2 h-fit bg-gray-100/50 dark:bg-gray-800/50">
-		<p class="mb-8 text-xl font-black dark:text-white">Spoken Languages</p>
-		<div class="flex">
-			<Id class="mr-4" /> Indonesia - Native
-		</div>
-		<div class="flex">
-			<Gb class="mr-4" /> English - Professional
-		</div>
-		<div class="flex">
-			<Jp class="mr-4" /> Japanese - Beginner
-		</div>
-	</Card>
+	<div>
+		<Card class="m-2 h-fit bg-gray-100/50 dark:bg-gray-800/50">
+			<p class="mb-8 text-xl font-black dark:text-white">Spoken Languages</p>
+			<div class="flex">
+				<Id class="mr-4" /> Indonesia - Native
+			</div>
+			<div class="flex">
+				<Gb class="mr-4" /> English - Professional
+			</div>
+			<div class="flex">
+				<Jp class="mr-4" /> Japanese - Beginner
+			</div>
+		</Card>
+		<Card class="m-2 h-fit bg-gray-100/50 dark:bg-gray-800/50">
+			<p class="mb-8 text-xl font-black dark:text-white">What i do</p>
+			<List tag="ul" class="list-outside pl-4">
+				<Li>
+					Design, build and maintain enterprise and-or microservices
+				</Li>
+				<Li>
+					Build user friendly UI
+				</Li>
+				<Li>
+					Documentations: Project Overview, Architecture Diagram, API Documentation, Code Patterns, Strategy, RFC, etc
+				</Li>
+				<Li>
+					Unit testing
+				</Li>
+				<Li>
+					Team building and collaboration
+				</Li>
+			</List>
+		</Card>
+	</div>
 </div>
