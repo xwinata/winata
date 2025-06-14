@@ -14,12 +14,14 @@
 		collaboration: 'collaboration',
 		containerization: 'containerization',
 		database: 'database',
+    debugging: 'debugging',
 		devops: 'devops',
 		documentation: 'documentation',
 		formatter: 'formatter',
 		framework: 'framework',
 		frontend: 'frontend',
 		golang: 'golang',
+    git: 'git',
 		graph: 'graph',
 		infra: 'infra',
 		javascript: 'javascript/typescript',
@@ -300,8 +302,14 @@
 			alt: 'github',
 			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
 			ref: 'https://github.com/',
-			tags: [tags.tool, tags.collaboration]
+			tags: [tags.tool, tags.git, tags.collaboration]
 		},
+    {
+      alt: 'gitlab',
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg',
+      ref: 'https://about.gitlab.com/',
+			tags: [tags.tool, tags.git, tags.collaboration]
+    },
 		{
 			alt: 'kong',
 			src: '/images/kong.svg',
@@ -348,25 +356,31 @@
 			alt: 'elastic-search',
 			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg',
 			ref: 'https://www.elastic.co/elasticsearch',
-			tags: [tags.infra, tags.monitoring, tags.automation]
+			tags: [tags.automation, tags.debugging, tags.devops, tags.infra, tags.monitoring, tags.tool]
 		},
 		{
 			alt: 'splunk',
 			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg',
 			ref: 'https://www.splunk.com/',
-			tags: [tags.infra, tags.monitoring, tags.tool, tags.automation]
+			tags: [tags.automation, tags.debugging, tags.devops, tags.infra, tags.monitoring, tags.tool]
 		},
+    {
+      alt: 'grafana',
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg',
+      ref: 'https://grafana.com/',
+			tags: [tags.automation, tags.debugging, tags.devops, tags.infra, tags.monitoring, tags.tool]
+    },
 		{
 			alt: 'datadog',
 			src: '/images/datadog.svg',
 			ref: 'https://www.datadoghq.com/',
-			tags: [tags.infra, tags.monitoring, tags.tool, tags.automation]
+			tags: [tags.automation, tags.debugging, tags.devops, tags.infra, tags.monitoring, tags.tool]
 		},
 		{
 			alt: 'sentry',
 			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sentry/sentry-original.svg',
 			ref: 'https://sentry.io/',
-			tags: [tags.infra, tags.monitoring, tags.tool, tags.automation]
+			tags: [tags.automation, tags.debugging, tags.devops, tags.infra, tags.monitoring, tags.tool]
 		},
 		{
 			alt: 'sonarqube',
