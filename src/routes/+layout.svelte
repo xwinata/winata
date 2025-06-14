@@ -75,6 +75,7 @@
 		{
 			label: 'About this site',
 			href: 'https://github.com/xwinata/winata',
+			target: "_blank",
 			icon: GithubSolid,
 			activeIcon: GithubSolid
 		}
@@ -84,26 +85,26 @@
 <svelte:head>
 	<title>Christian Winata</title>
 </svelte:head>
-<DarkMode class="fixed right-4 bottom-4 z-99 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300" />
+<DarkMode class="fixed right-4 bottom-4 z-99 bg-gray-200 hover:bg-gray-300 dark:bg-gray-600" />
 <div class="relative min-h-fit dark:bg-gray-700 dark:text-white">
 	<NavigationBar {site} {menus} />
 	<div
 		bind:this={contentRef}
 		onmousemove={updateCoordinate}
 		role="article"
-		class="radialTracker px-2 pt-18 pb-4 md:pt-24 lg:pt-24 lg:min-h-screen"
+		class="radialTracker px-2 pt-18 pb-4 md:pt-24 lg:min-h-screen lg:pt-24"
 	>
 		{@render children()}
 	</div>
 </div>
 <Footer class="h-20 bg-zinc-100 p-2 dark:bg-gray-800 dark:text-gray-100">
 	<p class="h-full content-center text-center text-xs md:mr-14 md:text-right">
-		Built with <a href="https://svelte.dev/" class={urlClass}>Svelte</a> using
-		<a href="https://flowbite-svelte.com/" class={urlClass}>Flowbite</a>
+		Built with <a href="https://svelte.dev/" target="_blank" class={urlClass}>Svelte</a> using
+		<a href="https://flowbite-svelte.com/" target="_blank" class={urlClass}>Flowbite</a>
 		and
-		<a href="https://tailwindcss.com/" class={urlClass}>Tailwind CSS</a>, coded on <br /><a
-			href="https://code.visualstudio.com/"
+		<a href="https://tailwindcss.com/" target="_blank" class={urlClass}>Tailwind CSS</a>, coded on <br /><a
+			href="https://code.visualstudio.com/" target="_blank"
 			class={urlClass}>Visual Studio Code</a
-		>, and deployed with <a href="https://render.com/" class={urlClass}>Render</a>.
+		>, and deployed with <a href="https://render.com/" target="_blank" class={urlClass}>Render</a>.
 	</p>
 </Footer>

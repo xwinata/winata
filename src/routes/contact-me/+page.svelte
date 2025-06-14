@@ -10,12 +10,12 @@
 		<p class="text-5xl">you can send me email through:</p>
 		<a class={linkHoverClass} href="mailto:christian.double.u@gmail.com">
 			<i class="text-xl">christian.double.u@gmail.com</i>
-			<MailBoxSolid class="size-40 place-self-center" style="transition-property: none;"/>
+			<MailBoxSolid class="size-40 place-self-center" style="transition-property: none;" />
 		</a>
 		<p class="text-2xl">or check my other references below</p>
 		<div class="flex place-content-center">
-			<a href="https://github.com/xwinata"><GithubSolid class={socClass} /></a>
-			<a href="https://www.linkedin.com/in/christian-winata-180a7993/"
+			<a href="https://github.com/xwinata" target="_blank"><GithubSolid class={socClass} /></a>
+			<a href="https://www.linkedin.com/in/christian-winata-180a7993/" target="_blank"
 				><LinkedinSolid class={socClass} /></a
 			>
 		</div>

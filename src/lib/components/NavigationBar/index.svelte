@@ -34,6 +34,7 @@
 			<NavLi
 				class="align-center flex h-8 rounded-sm p-1"
 				href={menu.href}
+    		{...(menu.target ? { target: menu.target } : {})}
 				on:click={!hidden ? toggle : () => {}}
 			>
 				{#if activeUrl === menu.href}
