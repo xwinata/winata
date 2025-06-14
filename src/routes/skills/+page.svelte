@@ -83,9 +83,9 @@
 				class={gridViewClass}
 			>
 				{#each items as { ref, src, alt }, index (index)}
-					<div class="snap-center hover:scale-108">
+					<div class="snap-center">
 						<a href={ref} target="_blank">
-							<img {src} {alt} class="size-20" />
+							<img {src} {alt} class="size-20 justify-self-center hover:scale-108" />
 						</a>
 						<Tooltip defaultClass="">
 							{alt}
