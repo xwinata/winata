@@ -17,7 +17,25 @@
 	);
 
 	let listViewModeButtonColor = $derived(viewMode === 'list' ? 'primary' : 'dark');
+	let listViewClass = [
+		'snap-y',
+		'overflow-y-scroll',
+		'h-full'
+	].join(' ');
+
 	let gridViewModeButtonColor = $derived(viewMode === 'grid' ? 'primary' : 'dark');
+	let gridViewClass = [
+		'h-full',
+		'grid-auto-flow',
+		'grid',
+		'snap-y',
+		'grid-cols-3',
+		'gap-8',
+		'overflow-x-hidden',
+		'overflow-y-scroll',
+		'md:grid-cols-4',
+		'lg:grid-cols-5'
+	].join(' ');
 </script>
 
 <div class="place-content-center pr-2 md:flex lg:flex">
@@ -47,7 +65,7 @@
 			</div>
 		</div>
 		{#if viewMode === 'list'}
-			<div class="snap-y overflow-y-scroll">
+			<div class={listViewClass}>
 				{#each items as { ref, src, alt, tags }, index (index)}
 					<a href={ref} target="_blank" class="m-2 flex snap-center hover:pl-2">
 						<img {src} {alt} class="mr-4 size-20" />
@@ -62,7 +80,7 @@
 			</div>
 		{:else}
 			<div
-				class="grid-auto-flow grid snap-y grid-cols-3 gap-8 overflow-x-hidden overflow-y-scroll md:grid-cols-4 lg:grid-cols-5"
+				class={gridViewClass}
 			>
 				{#each items as { ref, src, alt }, index (index)}
 					<div class="snap-center hover:scale-108">
