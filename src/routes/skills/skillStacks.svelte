@@ -60,7 +60,7 @@
 		},
 		{
 			alt: 'fiber',
-			src: 'https://gofiber.io/assets/images/logo.svg',
+			src: 'https://gofiber.io/img/logo-dark.svg',
 			ref: 'https://gofiber.io/',
 			tags: [tags.backend, tags.framework, tags.api, tags.golang]
 		},
@@ -195,6 +195,12 @@
 			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
 			ref: 'https://swagger.io/',
 			tags: [tags.backend, tags.documentation, tags.tool, tags.api]
+		},
+		{
+			alt: 'MKDocs(Material)',
+			src: '/images/mkdocs.svg',
+			ref: 'https://squidfunk.github.io/mkdocs-material/',
+			tags: [tags.documentation]
 		},
 		{
 			alt: 'openapi-generator',
