@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Button, ButtonGroup, Card, Input, InputAddon, Li, List, Tooltip } from 'flowbite-svelte';
+	import { Badge, Button, ButtonGroup, Card, Input, InputAddon, Li, List, Tooltip } from 'flowbite-svelte';
 	import { FilterSolid, ObjectsColumnSolid, RectangleListSolid } from 'flowbite-svelte-icons';
 	import { Id, Gb, Jp } from 'svelte-flags';
 
 	import { stacks } from './skillStacks.svelte';
-	import { whatIdo } from './whatIDo.svelte';
+	import { softSkills } from './softSkills.svelte';
 
 	let skillFilter = $state('');
 	let viewMode = $state('grid');
@@ -104,17 +104,14 @@
 			<div class="flex">
 				<Gb class="mr-4" /> English - Professional
 			</div>
-			<div class="flex">
-				<Jp class="mr-4" /> Japanese - Beginner
-			</div>
 		</Card>
 		<Card class="m-2 h-fit bg-gray-100/50 dark:bg-gray-800/50">
-			<p class="mb-8 text-xl font-black dark:text-white">What i do</p>
-			<List tag="ul" class="list-outside pl-4">
-				{#each whatIdo as iDo}
-					<Li>{iDo}</Li>
-				{/each}
-			</List>
+			<p class="mb-8 text-xl font-black dark:text-white">Soft Skills</p>
+			<div class="flex flex-wrap justify-evenly">
+			{#each softSkills as skill}
+				<Badge class="m-1" large rounded>{skill}</Badge>
+			{/each}
+			</div>
 		</Card>
 	</div>
 </div>

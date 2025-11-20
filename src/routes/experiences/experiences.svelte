@@ -5,67 +5,77 @@
 			title: 'Senior Backend Engineer | DataOn',
 			imgAlt: 'DataOn',
 			imgSrc: '/images/dataon.svg',
-			desc: `As a Senior Backend Engineer, my scope of work is to architech a scalable microservices
-        to support Dataon's HRIS Saas Application. I take ownership of end-to-end development from
-        planning and implementation to deployment and monitoring.`
+			items: [
+				'Build overhead Go Libraries for multi-tenants services. Including Auth Middleware, Tenant DB Connection, JSON Standard REST Response, Multi Language Translator, Golang Standard Context, while ensuring scalable and maintainable infrastructure',
+				'Build and utility services such as cron service, module license service, and auth service',
+				'Write comprehensive technical documentations using MKDocs, Swagger, Excel, and test scenarios to enhance deliverabilities',
+				'Write detailed tasks and distribute them to peers',
+				`Help to architect a Go framework aligned with the company’s business flows in collaboration with other team leads`,
+				'Main Stacks: Go - Fiber, Mux',
+			]
 		},
 		{
 			date: 'July 2020 - September 2024',
 			title: 'Senior Software Engineer | Xendit',
 			imgAlt: 'xendit',
 			imgSrc: '/images/xendit.svg',
-			desc: `Under Onboarding Team, i develop and optimize both frontend and backend systems to enhance
-				the user registration experience. My work focuses on improving UX, streamlining workflows,
-				and increasing conversion rates. I also manage an internal admin dashboard to support
-				onboarding operations. Collaborating closely with product managers and designers, I leverage
-				A/B testing with LaunchDarkly to drive data-informed decisions and create seamless,
-				high-performing onboarding experiences.`
+			items: [
+				'Develop and maintain features in both backend and frontend for Onboarding Service',
+				`Built Onboarding Form Config Service to increase frontend’s maintainability and decrease frontend’s development time by 50%`,
+				'Integrated User Orchestration Service to payment channels across company to improve Onboarding UX',
+				'Built Virtual Account Fraud Detection Service',
+				'Revamped Internal Dashboard to improve latencies and discoverability, remove feature bloats, and streamline workflows',
+				'Enhanced collaboration and productivity through Slack workflows',
+				'Main stacks: Javascript, Typescript, NodeJS - Express, React, Go - Echo',
+			]
 		},
 		{
 			date: 'June 2019 - February 2020',
 			title: 'Senior Software Engineer | Ayannah',
 			imgAlt: 'ayannah',
 			imgSrc: '/images/ayannah.svg',
-			desc: `Design and implement scalable backend architectures, ensuring performance, security, and
-				maintainability for the lending platform. Beyond coding, I mentor junior engineers, foster
-				best practices, and drive technical decisions to create a robust and efficient financial
-				platform.`
+			items: [
+				'Build Lending Platform backend service from scratch',
+				'Work with the product manager to distribute and deliver feature tasks',
+				'Mentored junior developers',
+				'Main stacks: Go - Echo',
+			]
 		},
 		{
 			date: 'March 2018 - Mei 2019',
 			title: 'Software Engineer | Alterra',
 			imgAlt: 'alterra',
 			imgSrc: '/images/alterra.svg',
-			desc: `Sepulsa rebranded. My job descs and scopes are still the same.`
-		},
-		{
-			date: 'June 2016 - March 2018',
-			title: 'Software Engineer | Sepulsa',
-			imgAlt: 'sepulsa',
-			imgSrc: '/images/sepulsa.svg',
-			desc: `I develop and maintain APIs to facilitate seamless transactions and integrations with
-				third-party services like BCA and CIMB. I primarily work with Drupal for backend development
-				while utilizing Golang and Python for payment microservices. My responsibilities include
-				building scalable APIs, conducting unit tests, and performing end-to-end testing using
-				Python Robot Framework to ensure system reliability and efficiency.`
+			items: [
+				`Built User Service as a source of truth of user data`,
+				'Integrated bank payment channels into the transaction system',
+				'Develop and maintain features for User Dashboard backend service',
+				`Collaborated with the team leader to enhance team’s collaboration and productivity through slack workflows`,
+				'Automated testing and regression processes to enhance software quality and efficiency',
+			]
 		},
 		{
 			date: 'January 2015 - May 2016',
 			title: 'IT Staff | Coldwell Banker Indonesia',
 			imgAlt: 'coldwell-banker',
 			imgSrc: '/images/coldwell-banker.svg',
-			desc: `I provided technical support for staff, ensuring the smooth operation of IT equipment and
-				software. In addition to troubleshooting and maintenance, I took the initiative to develop
-				the company’s profile website using Drupal, enhancing its online presence and accessibility.`
+			items: [
+				'Develop and maintain company website',
+				'Procure and maintain IT software and equipment',
+				'Main stacks: PHP - Drupal',
+			]
 		},
 		{
 			date: 'June 2014 - November 2014',
 			title: 'Junior Web Developer | Maven Lab',
 			imgAlt: 'maven-lab',
 			imgSrc: '/images/maven-lab.svg',
-			desc: `I worked on the NTUC Plus website in Singapore, leveraging their Drupal website to develop
-				new features, resolve bugs, and ensure site stability. My role involved maintaining the
-				platform, optimizing performance, and contributing to a seamless user experience.`
+			items: [
+				'Develop and maintain features',
+				'Fix bugs',
+				'Work with product manager and testers to deliver features and fixes',
+				'Main stacks: PHP - Drupal',
+			]
 		}
 	];
 </script>
