@@ -25,7 +25,7 @@
 				<svelte:fragment slot="icon">
 					<img {alt} {src} class={companyLogoClass} />
 				</svelte:fragment>
-				<List>
+				<List class="list-outside">
 					{#each items as item}
 						<Li>{item}</Li>	
 					{/each}
