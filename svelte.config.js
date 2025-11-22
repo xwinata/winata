@@ -1,5 +1,31 @@
-import adapter from '@sveltejs/adapter-node';
+import adapterNode from '@sveltejs/adapter-node';
+import adapterStatic from '@sveltejs/adapter-static';
+
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+
+let configProps = {};
+if (process.env.DEPLOY_TARGET == "static") {
+	configProps = {
+		kit: {
+			adapter: adapterStatic({
+				fallback: 'index.html'
+			}),
+			prerender: {
+				entries: ['*']
+			},
+			paths: {
+				base: '',
+				relative: true,
+			},
+		},
+	}
+} else {
+	configProps = {
+		kit: {
+			adapter: adapterNode()
+		}
+	}
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -7,9 +33,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	kit: {
-		adapter: adapter()
-	}
+	...configProps
 };
 
 export default config;
