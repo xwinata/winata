@@ -102,9 +102,9 @@
 		Built with <a href="https://svelte.dev/" target="_blank" class={urlClass}>Svelte</a> using
 		<a href="https://flowbite-svelte.com/" target="_blank" class={urlClass}>Flowbite</a>
 		and
-		<a href="https://tailwindcss.com/" target="_blank" class={urlClass}>Tailwind CSS</a>, coded on <br /><a
+		<a href="https://tailwindcss.com/" target="_blank" class={urlClass}>Tailwind CSS</a>,<br/>coded on <a
 			href="https://code.visualstudio.com/" target="_blank"
 			class={urlClass}>Visual Studio Code</a
-		>, and deployed with <a href="https://render.com/" target="_blank" class={urlClass}>Render</a>.
+		>.
 	</p>
 </Footer>

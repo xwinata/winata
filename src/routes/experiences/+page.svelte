@@ -18,7 +18,7 @@
 </script>
 
 <Card class="my-2 justify-self-center bg-gray-100/50 md:min-w-2xl lg:min-w-4xl dark:bg-gray-800/50">
-	<p class="mb-4 text-2xl">Job Experience</p>
+	<p class="mb-4 text-2xl">Job Experiences</p>
 	<Timeline order="vertical">
 		{#each exps as { date, title, imgAlt: alt, imgSrc: src, items }, index (index)}
 			<TimelineItem {date} {title}>

@@ -8,7 +8,7 @@
 		'hover:dark:text-sky-300',
 		'drop-shadow-md',
 		'justify-self-center',
-		'md:m-8',
+		'md:m-4',
 		'md:min-w-2xl'
 	];
 
@@ -54,8 +54,9 @@
 	</div>
 </div>
 <Card class={thirdCardClass}>
-	When I'm not writing code, you'll probably find me spending time with my wife, or diving into a
-	game while listening to musics. Music and gaming fuel my creativity, giving me a fresh perspective
-	when I get back to building software. Whether it's keeping rhythm, discovering new sounds, or
-	exploring virtual worlds, I enjoy the balance between technology and creativity.
+	When I'm not writing code, i spend most of my time with my wife doing house chores, traveling,
+	shoppping, or do other quality time together. I also enjoy playing games, learn new stuff like building
+	this site using svelte for example while listening to musics. Musics fuels my creativity,
+	giving me a fresh perspective while building software. Whether it's keeping rhythm,
+	discovering new sounds, or exploring virtual worlds, I enjoy the balance between technology and creativity.
 </Card>
